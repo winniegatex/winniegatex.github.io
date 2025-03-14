@@ -75,7 +75,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #f4a261;
+    color: #ec8420 ;
 }
 /* Hero Section */
 .hero {
@@ -120,7 +120,7 @@ body {
 .cta-btn {
     display: inline-block;
     padding: 15px 30px;
-    background: #f4a261;
+    background: #ec8420 ;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -133,21 +133,21 @@ body {
     background: #e76f51;
 }
 .border-primary {
-    border-color: #2a9d8f !important;
+    border-color: #709c4a !important;
 }
 a:hover{
-    color: #2a9d8f;
+    color: #709c4a;
     text-decoration: none;
 }
 .btn-link {
     font-weight: 400;
-    color: #2a9d8f;
+    color: #709c4a;
     text-decoration: none;
 }
 .btn-primary {
     color: #000;
-    background-color: #2a9d8f;
-    border-color: #2a9d8f;
+    background-color: #709c4a;
+    border-color: #709c4a;
 }
 /* Destinations */
 .destinations {
@@ -158,7 +158,7 @@ a:hover{
 .destinations h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 40px;
-    color: #2a9d8f;
+    color: #709c4a;
 }
 
 .destination-grid1 {
@@ -188,7 +188,7 @@ a:hover{
 .destination-card2 h3 {
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     padding: 15px;
-    color: #264653;
+    color: #242330 ;
 }
 
 .destination-card2 p {
@@ -206,10 +206,10 @@ a:hover{
 .why-choose h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 40px;
-    color: #2a9d8f;
+    color: #709c4a;
 }
 .text-primary{
-    color: #2a9d8f; 
+    color: #709c4a; 
 }
 .why-grid {
     display: grid;
@@ -224,7 +224,7 @@ a:hover{
 
 .why-item h3 {
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    color: #264653;
+    color: #242330 ;
 }
 
 .why-item p {
@@ -240,7 +240,7 @@ a:hover{
 .testimonials h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 40px;
-    color: #2a9d8f;
+    color: #709c4a;
 }
 
 .testimonial-grid {
@@ -264,7 +264,7 @@ a:hover{
 .testimonial-card span {
     display: block;
     margin-top: 10px;
-    color: #f4a261;
+    color: #ec8420 ;
 }
 
 /* CTA Section */
@@ -313,7 +313,7 @@ a:hover{
 .affiliations h2 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 40px;
-    color: #2a9d8f;
+    color: #709c4a;
 }
 
 .affiliations-grid {
@@ -345,13 +345,13 @@ a:hover{
 
 .affiliation-item p {
     font-size: 1rem;
-    color: #264653;
+    color: #242330 ;
 }
  
 /* Footer */
 .footer {
     padding: 40px 20px;
-    background: #264653;
+    background: #242330 ;
     color: #fff;
     text-align: center;
 }
@@ -374,7 +374,7 @@ a:hover{
 }
 
 .footer-links a:hover {
-    color: #f4a261;
+    color: #ec8420 ;
 }
 
 /* Mobile Responsiveness */
@@ -559,7 +559,7 @@ a:hover{
 
 /********** Template CSS **********/
 :root {
-    --primary: #2a9d8f;
+    --primary: #709c4a;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -975,7 +975,7 @@ a:hover{
 
 .icon-list i {
     margin-right: 5px;
-    color: #ff5a5f;
+    color: #801a1d ;
 }
 .destination-card:hover {
     transform: translateX(-50%) translateY(-5px) scale(1.05);
@@ -1033,7 +1033,7 @@ a:hover{
 
 .icon-list i {
     margin-right: 5px;
-    color: #ff5a5f;
+    color: #801a1d ;
 }
 
 /* Make sure each row has 3 equal columns */
@@ -1067,7 +1067,7 @@ a:hover{
 
 /* Price per person tag styling */
 .price-tag {
-    background: #ff5a5f;
+    background: #801a1d ;
     color: white;
     font-weight: bold;
     position: absolute;
@@ -1126,7 +1126,7 @@ a:hover{
     position: absolute;
     top: 12px;
     left: 12px;
-    background-color: #ff5a5f;
+    background-color: #801a1d ;
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
@@ -1139,7 +1139,7 @@ a:hover{
     position: absolute;
     bottom: 12px;
     right: 12px;
-    background-color: #ff5a5f;
+    background-color: #801a1d ;
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
@@ -1244,7 +1244,7 @@ a:hover{
 }
 
 .event-footer {
-    background: #ff5a5f;
+    background: #801a1d ;
     text-align: center;
     padding: 10px;
     font-size: 14px;
