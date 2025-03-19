@@ -1253,3 +1253,134 @@ a:hover{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.overview {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview .info {
+    width: 60%;
+}
+
+.overview h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking-form {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h3 {
+    color: #d89100;
+}
+
+.booking-form input, .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background: #d89100;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.related-tours {
+    text-align: center;
+    padding: 20px;
+}
+
+.tour-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tour {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.tour img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tour button {
+    background: #d89100;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.location {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+}
+.photo-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.photo-section img {
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.detail-item {
+    text-align: center;
+}
+.detail-item i {
+    color: orange;
+    font-size: 18px;
+}
