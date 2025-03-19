@@ -1384,3 +1384,44 @@ table, th, td {
     color: orange;
     font-size: 18px;
 }
+.included-excluded {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.included li,
+.excluded li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.included li {
+    color: #28a745; /* Green for included */
+}
+
+.excluded li {
+    color: #dc3545; /* Red for excluded */
+}
+
+.included li::before {
+    content: '\2713'; /* Checkmark symbol */
+    margin-right: 10px;
+}
+
+.excluded li::before {
+    content: '\2717'; /* Cross symbol */
+    margin-right: 10px;
+}
