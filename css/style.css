@@ -329,3 +329,36 @@ footer {
     flex-direction: column;
   }
 }
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .contact-details {
+    font-size: 0.95rem;
+  }
+
+  .contact-details i {
+    width: 18px;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
