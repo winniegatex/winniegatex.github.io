@@ -6,6 +6,7 @@
   <title>Winfred Wambui | Backend Developer</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <header>
@@ -35,6 +36,24 @@
         <a href="assets/resume.pdf" class="btn primary">Download Resume</a>
         <a href="contact.html" class="btn secondary">Contact Me</a>
       </div>
+    </div>
+    <div class="hero-illustration">
+      <img src="images/hero-dev-illustration.svg" alt="Developer illustration">
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stat">
+      <h3>4+</h3>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Completed Projects</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
     </div>
   </section>
 
@@ -66,5 +85,12 @@
   <footer>
     <p>&copy; 2025 Winfred Wambui. All rights reserved.</p>
   </footer>
+
+  <script>
+    ScrollReveal().reveal('.hero-content', { delay: 200, origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('.hero-illustration', { delay: 300, origin: 'right', distance: '50px' });
+    ScrollReveal().reveal('.skills-overview', { delay: 200 });
+    ScrollReveal().reveal('.project-card', { interval: 200 });
+  </script>
 </body>
 </html>
