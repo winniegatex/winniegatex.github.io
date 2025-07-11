@@ -15,6 +15,12 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* === NAVBAR === */
 .navbar {
   background-color: #4B0082;
@@ -43,9 +49,22 @@ a {
 
 /* === HERO SECTION === */
 .hero {
-  background-color: #fff;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  padding-right: 2rem;
+}
+
+.hero-illustration {
+  flex: 1 1 300px;
+  text-align: center;
 }
 
 .hero .highlight {
@@ -102,6 +121,22 @@ a {
   color: white;
 }
 
+/* === STATS SECTION === */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.stat h3 {
+  color: #FFC107;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 /* === SKILLS SECTION === */
 .skills-overview {
   padding: 4rem 2rem;
@@ -152,4 +187,27 @@ footer {
   color: white;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content, .hero-illustration {
+    padding: 0;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
