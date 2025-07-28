@@ -4,9 +4,177 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Winfred Wambui | Backend Developer</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5F5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4B0082;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #FFC107;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #4B0082 40%, #00B7EB 90%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 193, 7, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .hero-content {
+      flex: 1 1 400px;
+      padding: 1rem;
+      z-index: 1;
+      animation: fadeInUp 1.2s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      color: #FFC107;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .cta-buttons .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem 0.5rem 0 0;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .btn.primary { background-color: #FFC107; color: #4B0082; }
+    .btn.secondary { background-color: #fff; color: #4B0082; }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    .hero-illustration {
+      flex: 1 1 300px;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1;
+    }
+    .hero-illustration img { max-width: 100%; animation: float 4s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .stats-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      background-color: #fff;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .stat {
+      flex: 1 1 200px;
+      margin: 1rem;
+    }
+    .stat h3 {
+      font-size: 2.2rem;
+      color: #4B0082;
+    }
+    .skills-overview {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(180deg, #F5F5F5, #fff);
+    }
+    .skills-overview h2 { margin-bottom: 1.5rem; color: #4B0082; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .skill-card:hover { transform: translateY(-5px); }
+    .project-preview {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: #fff;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .project-card {
+      background: #F5F5F5;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #4B0082;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-content, .hero-illustration { flex: 1 1 100%; }
+      .stats-section { flex-direction: column; gap: 1rem; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -24,81 +192,65 @@
   </header>
 
   <section class="hero">
-    <div class="container hero-flex">
-      <div class="hero-content">
-        <h1>Hello, I'm <span class="highlight">Winfred Wambui</span></h1>
-        <p class="tagline">Backend Developer | PHP Enthusiast | Data Analyst</p>
-        <p class="summary">
-          I specialize in building robust backend systems with PHP and MySQL,
-          crafting insightful reports through data analytics, and delivering
-          scalable digital solutions.
-        </p>
-        <div class="cta-buttons">
-          <a href="assets/resume.pdf" class="btn primary">Download Resume</a>
-          <a href="contact.html" class="btn secondary">Contact Me</a>
-        </div>
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Winfred Wambui</span></h1>
+      <p class="tagline">Backend Developer | PHP Enthusiast | Data Analyst</p>
+      <p class="summary">
+        I specialize in building robust backend systems with PHP and MySQL,
+        crafting insightful reports through data analytics, and delivering scalable digital solutions.
+      </p>
+      <div class="cta-buttons">
+        <a href="assets/resume.pdf" class="btn primary">Download Resume</a>
+        <a href="contact.html" class="btn secondary">Contact Me</a>
       </div>
-      <div class="hero-illustration">
-        <img src="images/dev.jpg" alt="Developer illustration">
-      </div>
+    </div>
+    <div class="hero-illustration">
+      <img src="images/hero-dev-illustration.svg" alt="Developer illustration">
     </div>
   </section>
 
   <section class="stats-section">
-    <div class="container stats-grid">
-      <div class="stat">
-        <h3>4+</h3>
-        <p>Years of Experience</p>
-      </div>
-      <div class="stat">
-        <h3>10+</h3>
-        <p>Completed Projects</p>
-      </div>
-      <div class="stat">
-        <h3>100%</h3>
-        <p>Client Satisfaction</p>
-      </div>
+    <div class="stat">
+      <h3>4+</h3>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Completed Projects</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
     </div>
   </section>
 
   <section class="skills-overview">
-    <div class="container">
-      <h2>Core Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">PHP & Backend Development</div>
-        <div class="skill-card">MySQL & Database Optimization</div>
-        <div class="skill-card">Data Analysis & Visualization</div>
-        <div class="skill-card">Git & Debugging</div>
-      </div>
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">PHP & Backend Development</div>
+      <div class="skill-card">MySQL & Database Optimization</div>
+      <div class="skill-card">Data Analysis & Visualization</div>
+      <div class="skill-card">Git & Debugging</div>
     </div>
   </section>
 
   <section class="project-preview">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Nurselytic</h3>
-          <p>Healthcare analytics platform focused on delivering nurse-related insights. Built with PHP, SQL, and dashboards.</p>
-        </div>
-        <div class="project-card">
-          <h3>Kalbo Adventures</h3>
-          <p>Travel and tour website built for Kalbo Adventures. Includes bookings, galleries, and admin dashboard.</p>
-        </div>
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Nurselytic</h3>
+        <p>Healthcare analytics platform focused on delivering nurse-related insights. Built with PHP, SQL, and dashboards.</p>
       </div>
-      <a href="projects.html" class="btn outline">See All Projects</a>
+      <div class="project-card">
+        <h3>Kalbo Adventures</h3>
+        <p>Travel and tour website built for Kalbo Adventures. Includes bookings, galleries, and admin dashboard.</p>
+      </div>
     </div>
+    <a href="projects.html" class="btn primary">See All Projects</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Winfred Wambui. All rights reserved.</p>
   </footer>
-
-  <script>
-    ScrollReveal().reveal('.hero-content', { delay: 200, origin: 'left', distance: '50px' });
-    ScrollReveal().reveal('.hero-illustration', { delay: 300, origin: 'right', distance: '50px' });
-    ScrollReveal().reveal('.skills-overview', { delay: 200 });
-    ScrollReveal().reveal('.project-card', { interval: 200 });
-  </script>
 </body>
 </html>
