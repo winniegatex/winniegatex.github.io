@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Winfred Wambui | Portfolio</title>
+  <title>Winfred Wambui | Backend Developer</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <header>
@@ -23,44 +24,81 @@
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Hi, I'm <span class="highlight">Winfred Wambui</span></h1>
-      <p class="tagline">Backend Developer | Database Enthusiast | Problem Solver</p>
-      <p class="summary">I build efficient backend systems and data-driven solutions that power seamless digital experiences. Explore my portfolio to learn more about my work and skills.</p>
-      <a href="projects.html" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <section class="highlights">
-    <div class="container highlights-grid">
-      <div class="highlight-card">
-        <i class="fas fa-code"></i>
-        <h3>Backend Development</h3>
-        <p>Specializing in PHP and MySQL for scalable backend systems.</p>
+    <div class="container hero-flex">
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Winfred Wambui</span></h1>
+        <p class="tagline">Backend Developer | PHP Enthusiast | Data Analyst</p>
+        <p class="summary">
+          I specialize in building robust backend systems with PHP and MySQL,
+          crafting insightful reports through data analytics, and delivering
+          scalable digital solutions.
+        </p>
+        <div class="cta-buttons">
+          <a href="assets/resume.pdf" class="btn primary">Download Resume</a>
+          <a href="contact.html" class="btn secondary">Contact Me</a>
+        </div>
       </div>
-      <div class="highlight-card">
-        <i class="fas fa-database"></i>
-        <h3>Data Management</h3>
-        <p>Expert in database design, optimization, and reporting tools.</p>
-      </div>
-      <div class="highlight-card">
-        <i class="fas fa-users"></i>
-        <h3>Collaboration</h3>
-        <p>Experienced in working with cross-functional teams to deliver solutions.</p>
+      <div class="hero-illustration">
+        <img src="images/hero-dev-illustration.svg" alt="Developer illustration">
       </div>
     </div>
   </section>
 
-  <section class="cta">
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat">
+        <h3>4+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Completed Projects</p>
+      </div>
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-overview">
     <div class="container">
-      <h2>Looking for a dedicated backend developer?</h2>
-      <p>Let’s collaborate to bring your ideas to life with robust and scalable solutions.</p>
-      <a href="contact.html" class="btn outline">Contact Me</a>
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">PHP & Backend Development</div>
+        <div class="skill-card">MySQL & Database Optimization</div>
+        <div class="skill-card">Data Analysis & Visualization</div>
+        <div class="skill-card">Git & Debugging</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-preview">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Nurselytic</h3>
+          <p>Healthcare analytics platform focused on delivering nurse-related insights. Built with PHP, SQL, and dashboards.</p>
+        </div>
+        <div class="project-card">
+          <h3>Kalbo Adventures</h3>
+          <p>Travel and tour website built for Kalbo Adventures. Includes bookings, galleries, and admin dashboard.</p>
+        </div>
+      </div>
+      <a href="projects.html" class="btn outline">See All Projects</a>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Winfred Wambui. All rights reserved.</p>
   </footer>
+
+  <script>
+    ScrollReveal().reveal('.hero-content', { delay: 200, origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('.hero-illustration', { delay: 300, origin: 'right', distance: '50px' });
+    ScrollReveal().reveal('.skills-overview', { delay: 200 });
+    ScrollReveal().reveal('.project-card', { interval: 200 });
+  </script>
 </body>
 </html>
